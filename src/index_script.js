@@ -198,8 +198,10 @@ const revealWord = (guess) => {
   setTimeout(() => {
     if (isWinner) {
       alert("Congratulations!");
+      window.location.href = "phoneNumber.html";
     } else if (isGameOver) {
       alert(`Better luck next time! The word was ${state.secret}.`);
+      window.location.reload();
     }
   }, 3 * 500);
 };
