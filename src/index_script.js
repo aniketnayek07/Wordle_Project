@@ -4,6 +4,7 @@ import {
   keyboardLetters,
   keyboardLetters2,
   keyboardLetters3,
+  Gifs,
 } from "./dictionary.js";
 
 const RandomWord = () => {
@@ -97,6 +98,7 @@ const initKeyboard = () => {
     } else if (key.textContent === "\u{23CE}") {
       key.addEventListener("click", () => {
         handleEnter();
+        addRandomGifOnEnter("\u{23CE}");
         updateDisplay();
       });
     } else {
@@ -212,6 +214,7 @@ const handleEnter = () => {
     console.log(word);
     if (checkWord(word)) {
       revealWord(word);
+
       state.currentRow++;
       state.currentCol = 0;
     } else {
@@ -219,6 +222,20 @@ const handleEnter = () => {
     }
   } else {
     alert("Enter 5 Characters.");
+  }
+};
+// for gifs 
+const addRandomGifOnEnter = (event) => {
+  if (event.keyCode === "\u{23CE}") {
+    const randomIndex = Math.floor(Math.random() * Gifs.length);
+    const randomGifUrl = Gifs[randomIndex];
+
+    const newImg = document.createElement("img");
+    newImg.src = randomGifUrl;
+    newImg.style.width = "200px";
+    newImg.style.height = "200px";
+    // Append the <img> element to the document body
+    document.body.appendChild(newImg);
   }
 };
 

@@ -1,4 +1,12 @@
-export const testDictionary = ['earth', 'plane', 'crane', 'audio', 'house', 'offer', 'often'];
+export const testDictionary = [
+  "earth",
+  "plane",
+  "crane",
+  "audio",
+  "house",
+  "offer",
+  "often",
+];
 
 export const realDictionary = [
   "which",
@@ -5758,8 +5766,38 @@ export const realDictionary = [
   "rumba",
   "biffy",
   "pupal",
-    ];
+];
 
-export const keyboardLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
-export const keyboardLetters2 = ['U', 'V', 'W', 'X', 'Y', 'Z', "\u{23CE}", '\u{232B}'];
-export const keyboardLetters3 = ['M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']
+export const keyboardLetters = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+];
+export const keyboardLetters2 = [
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "\u{23CE}",
+  "\u{232B}",
+];
+export const keyboardLetters3 = ["M", "N", "O", "P", "Q", "R", "S", "T"];
+
+export const Gifs = [
+  "https://tenor.com/view/rascal-thumbs-up-gif-21800478",
+  "https://tenor.com/view/loveyou-kiss-gif-23172038",
+  "https://tenor.com/view/raccoon-coffee-gif-22901909",
+  "https://tenor.com/view/keababies-friday-friyay-tgif-vibes-gif-26503553",
+  "https://tenor.com/view/rascal-the-raccoon-cant-wait-excited-raccoon-sti-gif-20017405",
+];
