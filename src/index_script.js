@@ -234,7 +234,6 @@ const addRandomGifOnEnter = (event) => {
     newImg.src = randomGifUrl;
     newImg.style.width = "200px";
     newImg.style.height = "200px";
-    // Append the <img> element to the document body
     document.body.appendChild(newImg);
   }
 };
