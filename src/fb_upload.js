@@ -1,12 +1,8 @@
-//fb_upload.js
 // Import the functions you need from the SDKs you need
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js';
+import { collection, addDoc, getFirestore  } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js'; 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import {
-  collection,
-  addDoc,
-  getFirestore,
-} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,12 +15,13 @@ const firebaseConfig = {
   storageBucket: "my-first-project-b48de.appspot.com",
   messagingSenderId: "898416516730",
   appId: "1:898416516730:web:e8445061b696b6686425c3",
-  measurementId: "G-G02QL9L4MH",
+  measurementId: "G-G02QL9L4MH"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const db = getFirestore(app)
+
 
 const deployNumber = async (number1) => {
   try {
@@ -32,11 +29,11 @@ const deployNumber = async (number1) => {
       number: number1,
     });
     console.log("Document written with ID: ", docRef.id);
-    return docRef.id;
+    return docRef.id
   } catch (e) {
     console.error("Error adding document: ", e);
-    return e;
+    return e
   }
-};
+}
 
-export default deployNumber;
+export default deployNumber

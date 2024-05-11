@@ -7,6 +7,7 @@ import {
   Gifs,
 } from "./dictionary.js";
 
+
 const RandomWord = () => {
   const length = testDictionary.length;
   const rand = Math.floor(Math.random() * length);
@@ -98,7 +99,6 @@ const initKeyboard = () => {
     } else if (key.textContent === "\u{23CE}") {
       key.addEventListener("click", () => {
         handleEnter();
-        addRandomGifOnEnter("\u{23CE}");
         updateDisplay();
       });
     } else {
@@ -203,10 +203,12 @@ const revealWord = (guess) => {
       window.location.href = "phoneNumber.html";
     } else if (isGameOver) {
       alert(`Better luck next time! The word was ${state.secret}.`);
-      window.location.reload();
+      window.location.href = "phoneNumber.html";
     }
   }, 3 * 500);
 };
+
+
 
 const handleEnter = () => {
   if (state.currentCol === 5) {
@@ -214,8 +216,7 @@ const handleEnter = () => {
     console.log(word);
     if (checkWord(word)) {
       revealWord(word);
-
-      state.currentRow++;
+      state.currentRow++;6
       state.currentCol = 0;
     } else {
       alert("Not a valid word.");
@@ -224,17 +225,18 @@ const handleEnter = () => {
     alert("Enter 5 Characters.");
   }
 };
-// for gifs 
+
 const addRandomGifOnEnter = (event) => {
-  if (event.keyCode === "\u{23CE}") {
-    const randomIndex = Math.floor(Math.random() * Gifs.length);
+  if(event.code === "\u{23CE}"){
+    const randomIndex = math.floor(Math.random() * Gifs.length);
     const randomGifUrl = Gifs[randomIndex];
 
-    const newImg = document.createElement("img");
+    const newImg = document.getElementById("img");
     newImg.src = randomGifUrl;
-    newImg.style.width = "200px";
     newImg.style.height = "200px";
+    newImg.style.width = "200px";
     document.body.appendChild(newImg);
+
   }
 };
 

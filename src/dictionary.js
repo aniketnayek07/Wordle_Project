@@ -1,12 +1,4 @@
-export const testDictionary = [
-  "earth",
-  "plane",
-  "crane",
-  "audio",
-  "house",
-  "offer",
-  "often",
-];
+export const testDictionary = ['earth', 'plane', 'crane', 'audio', 'house', 'offer', 'often'];
 
 export const realDictionary = [
   "which",
@@ -5766,33 +5758,11 @@ export const realDictionary = [
   "rumba",
   "biffy",
   "pupal",
-];
+    ];
 
-export const keyboardLetters = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-];
-export const keyboardLetters2 = [
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-  "\u{23CE}",
-  "\u{232B}",
-];
-export const keyboardLetters3 = ["M", "N", "O", "P", "Q", "R", "S", "T"];
+export const keyboardLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+export const keyboardLetters2 = ['U', 'V', 'W', 'X', 'Y', 'Z', "\u{23CE}", '\u{232B}'];
+export const keyboardLetters3 = ['M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']
 
 export const Gifs = [
   "https://tenor.com/view/rascal-thumbs-up-gif-21800478",
