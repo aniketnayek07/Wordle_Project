@@ -20,11 +20,12 @@ body {
   width: calc(100vw - 30px);
   height: auto;
   z-index: 1;
+  min-height: calc(100vh - 30px);;
 }
 
 #container {
   display: flex;
-  margin-top: 10%;
+  margin-top: 3%;
   justify-content: center;
   align-items: center;
   height: 55vh;
@@ -108,8 +109,9 @@ body {
 }
 
 .gif {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
+  padding-top: 20px;
 }
 
 #imgCont {

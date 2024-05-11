@@ -99,6 +99,7 @@ const initKeyboard = () => {
     } else if (key.textContent === "\u{23CE}") {
       key.addEventListener("click", () => {
         handleEnter();
+        addRandomGifOnEnter();
         updateDisplay();
       });
     } else {
@@ -227,14 +228,18 @@ const handleEnter = () => {
 };
 
 const addRandomGifOnEnter = () => {
-    const randomIndex = math.floor(Math.random() * Gifs.length);
+    const randomIndex = Math.floor(Math.random() * Gifs.length);
     const randomGifUrl = Gifs[randomIndex];
 
     const newImg = document.getElementById("imgCont");
-    newImg.src = randomGifUrl;
-    newImg.style.height = "200px";
-    newImg.style.width = "200px";
-    document.body.appendChild(newImg);
+    var gif = document.createElement("img");
+    gif.classList.add("gif");
+    gif.src = randomGifUrl;
+    newImg.innerHTML = '';
+    newImg.appendChild(gif);
+    // newImg.style.height = "200px";
+    // newImg.style.width = "200px";
+    
 };
 
 initKeyboard();

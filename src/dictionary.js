@@ -5765,9 +5765,9 @@ export const keyboardLetters2 = ['U', 'V', 'W', 'X', 'Y', 'Z', "\u{23CE}", '\u{2
 export const keyboardLetters3 = ['M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']
 
 export const Gifs = [
-  "https://tenor.com/view/rascal-thumbs-up-gif-21800478",
-  "https://tenor.com/view/loveyou-kiss-gif-23172038",
-  "https://tenor.com/view/raccoon-coffee-gif-22901909",
-  "https://tenor.com/view/keababies-friday-friyay-tgif-vibes-gif-26503553",
-  "https://tenor.com/view/rascal-the-raccoon-cant-wait-excited-raccoon-sti-gif-20017405",
+  "https://media.tenor.com/oVcgyiJhkUEAAAAi/rascal-thumbs-up.gif",
+  "https://media1.tenor.com/m/Ez5abQcBMJIAAAAC/loveyou-kiss.gif",
+  "https://media.tenor.com/JPXT6UO5Y-4AAAAi/raccoon-coffee.gif",
+  "https://media.tenor.com/lbCB_7nISbEAAAAi/keababies-friday.gif",
+  "https://media1.tenor.com/m/KUoCJf5KHBAAAAAC/rascal-the-raccoon-cant-wait.gif",
 ];
