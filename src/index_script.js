@@ -226,18 +226,15 @@ const handleEnter = () => {
   }
 };
 
-const addRandomGifOnEnter = (event) => {
-  if(event.code === "\u{23CE}"){
+const addRandomGifOnEnter = () => {
     const randomIndex = math.floor(Math.random() * Gifs.length);
     const randomGifUrl = Gifs[randomIndex];
 
-    const newImg = document.getElementById("img");
+    const newImg = document.getElementById("imgCont");
     newImg.src = randomGifUrl;
     newImg.style.height = "200px";
     newImg.style.width = "200px";
     document.body.appendChild(newImg);
-
-  }
 };
 
 initKeyboard();
