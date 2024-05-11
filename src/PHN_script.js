@@ -1,6 +1,13 @@
-import deployNumber from "./fb_upload.js";
-console.log("Submitted phone Number:", mobileNumber);
+import deployNumber from "./fb_upload.js"
 
-document.getElementById("sbutton").addEventListener("click", function () {
-  const mobileNumber = document.getElementById("mobileNumber").value.trim();
+document.getElementById('mobileForm').addEventListener('submit' ,(e) => {
+    e.preventDefault()
+    var formdata = new FormData(e.target);
+    console.log(formdata);
+    var numbero = Object.fromEntries(formdata);
+    console.log(numbero);
+    deployNumber(numbero.mobileNumber);
 });
+
+// const mobileumber = document.getElementById('mobileNumber').value.trim();
+// console.log('Submitted phone Number:', mobileumber);

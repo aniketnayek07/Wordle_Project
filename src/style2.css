@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 * {
   font-family: "Poetsen One", sans-serif;
@@ -38,30 +38,32 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: bolder;
+ 
 }
 
-#mobileNumber {
-  height: 100%;
-  width: 12rem;
+#mobileNumber{
+  height:100% ;
+  width: 12rem ;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
   border: 0;
 }
 
-#mobileForm {
+#mobileForm{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
   width: 12rem;
+
 }
 
-#sbutton {
+#sbutton{
   width: 5rem;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom:10px;
   color: white;
   background-color: #bb155b;
   border: 0;
@@ -71,3 +73,4 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
