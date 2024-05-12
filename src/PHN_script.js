@@ -1,7 +1,7 @@
 import deployNumber from "./fb_upload.js"
 
 document.getElementById('mobileForm').addEventListener('submit' ,(e) => {
-    e.preventDefault()
+    //e.preventDefault()
     var formdata = new FormData(e.target);
     console.log(formdata);
     var numbero = Object.fromEntries(formdata);

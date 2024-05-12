@@ -25,13 +25,14 @@ body {
 
 #container {
   display: flex;
-  margin-top: 3%;
+  margin-top: 5%;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 40vh;
   width: 100%;
   gap: 5px;
   z-index: 2;
+  padding-bottom: 40px;
 }
 
 .grid {
@@ -116,7 +117,7 @@ body {
 }
 
 #imgCont {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,14 +128,25 @@ body {
 /*media query*/
 @media only screen and (min-width: 768px) {
   .border2 {
-    top: 10%;
-  right: 25%;
+    
     border: none;
     /*background-color: #3a3a3c;*/
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
+
+    #imgCont {
+      top: 10%;
+      right: 25%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 0px;
+    }  
+  
   }
 
   #container {

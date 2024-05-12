@@ -18,7 +18,14 @@
             </div>
             <div class="number">
                 <form id="mobileForm">
-                    <input type="tel" id="mobileNumber" name="mobileNumber" required placeholder="Mobile Number">
+                    <input 
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                  />
+                   id="mobileNumber" name="mobileNumber" required placeholder="Mobile Number">
                     <button type="submit" id="sbutton">Submit</button>
                 </form>
             </div>
