@@ -2,43 +2,58 @@
 
 * {
   font-family: "Poetsen One", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-html,
+html {
+  height: 100%;
+  overflow: hidden;
+
+}
+
 body {
   background-image: linear-gradient(#fbb5ca, #d846a6);
-  margin: 0;
-  padding: 0;
-}
-
-.border2 {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 15px solid #bb155b;
+  border: #bb155b 15px solid;
+}
+
+/* .border2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   position: relative;
+  border: 15px solid #bb155b;
   width: calc(100vw - 30px);
   height: calc(100vh - 30px);
   z-index: 1;
-}
+} */
 
 .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ecd8bd;
+  backdrop-filter: blur(5px);
+  background: rgba(236, 216, 189, 0.7);
   height: 20rem;
   width: 20rem;
-  border: 5px solid #d846a6;
+  border: 5px solid #bb155b;
   border-radius: 5%;
+  box-shadow: 5px 5px 15px 2px black;
+  gap: 20px
 }
 
 .box-text p {
   text-align: center;
   font-size: 30px;
   font-weight: bolder;
- 
 }
 
 #mobileNumber{
@@ -48,6 +63,13 @@ body {
   padding-bottom: 10px;
   border-radius: 5px;
   border: 0;
+}
+
+#phone{
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5%;
 }
 
 #mobileForm{
@@ -74,3 +96,20 @@ body {
   font-style: normal;
 }
 
+.fa-heart {
+    color: rgb(86, 1, 86);
+    font-size: 24px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: -1;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
