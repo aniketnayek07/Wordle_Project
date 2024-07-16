@@ -1,6 +1,5 @@
-export const testDictionary = ['earth', 'plane', 'crane', 'audio', 'house', 'offer', 'often'];
-
 export const realDictionary = [
+  "salts",
   "which",
   "there",
   "their",
@@ -5758,16 +5757,45 @@ export const realDictionary = [
   "rumba",
   "biffy",
   "pupal",
-    ];
+];
 
-export const keyboardLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
-export const keyboardLetters2 = ['U', 'V', 'W', 'X', 'Y', 'Z', "\u{23CE}", '\u{232B}'];
-export const keyboardLetters3 = ['M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']
+export const keyboardLetters = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+];
+export const keyboardLetters2 = [
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "\u{23CE}",
+  "\u{232B}",
+];
+export const keyboardLetters3 = ["M", "N", "O", "P", "Q", "R", "S", "T"];
 
 export const Gifs = [
   "https://media.tenor.com/oVcgyiJhkUEAAAAi/rascal-thumbs-up.gif",
   "https://media1.tenor.com/m/Ez5abQcBMJIAAAAC/loveyou-kiss.gif",
   "https://media.tenor.com/JPXT6UO5Y-4AAAAi/raccoon-coffee.gif",
   "https://media.tenor.com/lbCB_7nISbEAAAAi/keababies-friday.gif",
-  "https://media1.tenor.com/m/KUoCJf5KHBAAAAAC/rascal-the-raccoon-cant-wait.gif",
+  "https://media1.tenor.com/m/7gaPo_GdHWEAAAAC/hug-raccoon.gif",
+];
+
+export const GifsPhoneNumber = [
+  "https://media.tenor.com/dlaTGnqgoTcAAAAi/raccoon-animal.gif",
+  "https://media1.tenor.com/m/7gaPo_GdHWEAAAAC/hug-raccoon.gif",
+  "https://media1.tenor.com/m/BZaWjKzYBLQAAAAd/racoon-raccoon.gif",
+  "https://media1.tenor.com/m/nGXlpmHMFokAAAAC/love-hearts.gif",
 ];

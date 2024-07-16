@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wordle</title>
-    <link rel="stylesheet" href="./src/style2.css" />
-  </head>
 
-  <body>
-    <!-- <div class="border2"> -->
-    <div class="box">
-      <div class="box-text">
-        <p>Let us know about each other<br />👉👈</p>
-      </div>
-      <div class="number">
-        <form id="mobileForm">
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{10}"
-            placeholder="Phone Number"
-            required
-          />
-          <button type="submit" id="sbutton">Submit</button>
-        </form>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wordle</title>
+  <link rel="stylesheet" href="./src/style2.css" />
+</head>
 
-      <!-- TODO: CHANGE WORDS, CHANGE THAT ONE GIF, ADD IMAGES OF DOGS AND RACCOONS-->
+<body>
+  <!-- <div class="border2"> -->
+    
+    <div id="img1">
+        <img class="image-left" src="https://media.tenor.com/DiT4eAWAyEkAAAAi/dancing-racoon-dancing.gif" alt="gifs">
     </div>
-    <!-- </div> -->
-    <script
-      src="https://kit.fontawesome.com/4f3ce16e3e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./src/PHN_script.js" type="module"></script>
-  </body>
+  <div class="box">
+
+    <div class="box-text">
+      <p>Let us know about each other<br />👉👈</p>
+    </div>
+    <div class="number">
+      <form id="mobileForm">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone Number" required />
+        <button type="submit" id="sbutton">Submit</button>
+      </form>
+    </div>
+
+    <!-- TODO: CHANGE WORDS, CHANGE THAT ONE GIF, ADD IMAGES OF DOGS AND RACCOONS-->
+  </div>
+  <div id="img2">
+    <img class="image-right" src="https://media.tenor.com/Tj5pCWPKj_UAAAAi/dog.gif" alt="gifs">
+  </div>
+  
+  <!-- </div> -->
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="./src/PHN_script.js" type="module"></script>
+</body>
+
 </html>

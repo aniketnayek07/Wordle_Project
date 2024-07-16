@@ -1,5 +1,4 @@
 import {
-  testDictionary,
   realDictionary,
   keyboardLetters,
   keyboardLetters2,
@@ -7,15 +6,9 @@ import {
   Gifs,
 } from "./dictionary.js";
 
-
-const RandomWord = () => {
-  const length = testDictionary.length;
-  const rand = Math.floor(Math.random() * length);
-  return testDictionary[rand];
-};
 // game data
 const state = {
-  secret: RandomWord(),
+  secret: "salts",
   grid: Array(6)
     .fill()
     .map(() => Array(5).fill("")),
@@ -209,15 +202,14 @@ const revealWord = (guess) => {
   }, 3 * 500);
 };
 
-
-
 const handleEnter = () => {
   if (state.currentCol === 5) {
     const word = currentWord();
     console.log(word);
     if (checkWord(word)) {
       revealWord(word);
-      state.currentRow++;6
+      state.currentRow++;
+      6;
       state.currentCol = 0;
     } else {
       alert("Not a valid word.");
@@ -228,18 +220,17 @@ const handleEnter = () => {
 };
 
 const addRandomGifOnEnter = () => {
-    const randomIndex = Math.floor(Math.random() * Gifs.length);
-    const randomGifUrl = Gifs[randomIndex];
+  const randomIndex = Math.floor(Math.random() * Gifs.length);
+  const randomGifUrl = Gifs[randomIndex];
 
-    const newImg = document.getElementById("imgCont");
-    var gif = document.createElement("img");
-    gif.classList.add("gif");
-    gif.src = randomGifUrl;
-    newImg.innerHTML = '';
-    newImg.appendChild(gif);
-    // newImg.style.height = "200px";
-    // newImg.style.width = "200px";
-    
+  const newImg = document.getElementById("imgCont");
+  var gif = document.createElement("img");
+  gif.classList.add("gif");
+  gif.src = randomGifUrl;
+  newImg.innerHTML = "";
+  newImg.appendChild(gif);
+  // newImg.style.height = "200px";
+  // newImg.style.width = "200px";
 };
 
 initKeyboard();
